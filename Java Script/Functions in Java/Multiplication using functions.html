@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myfunction(5)">CLICK</button>
+    <p id="result"></p>
+    <script>
+    function myfunction(a,b){
+   if (b===undefined){
+    alert("The value of b is undefined")
+    var b=4
+   }
+   var result=a*b;
+   document.getElementById("result").innerHTML=result;
+    }
+    </script>
+</body>
+</html>
