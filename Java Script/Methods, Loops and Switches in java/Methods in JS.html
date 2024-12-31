@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Java Script String Methods</h1>
+    <p>Basic Methods</p>
+    <script>
+        var sampl="amAZIng";
+        document.write(sampl.toUpperCase());
+        document.write("<br>")
+        document.write(sampl.toLowerCase());
+        document.write("<br>");
+        document.write(sampl.startsWith("a"));
+        
+        var str="I learnt about methods";
+        var patt= new RegExp("about");
+        document.write("<br>")
+        var res= patt.test(str);
+
+        document.write(res);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Strings, Methods and Loops</h1>
+    <p>Numbers from 1 to 10</p>
+    <p id="result"></p>
+    <script>
+        var number="";
+        for(i=1; i<11; i++){
+            number += i + "<br>"
+        }
+        document.getElementById("result").innerHTML= number;
+        document.write("The random value is" +Math.floor(Math.random()*100)+"<br>")
+        var date= new Date();
+        document.write("Today's date is" +date.getDate())
+    </script>
+</body>
+</html> 
