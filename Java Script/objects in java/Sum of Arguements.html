@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sum of arguement and math objects</h1>
+    <p id="result"></p>
+    <script>
+        function sumAll(){
+            var sum=0
+            for(i=0; i<arguments.length; i++) {
+                sum+= arguments[i]
+            }
+            return sum;
+        }
+        document.getElementById("result").innerHTML=sumAll(5,10,20,25,40)
+
+        var value= Math.sin(30);
+        document.write("The value of sin30 is " + value + "<br>" + "<br>")
+
+        var value= Math.cos(30);
+        document.write("The value of cos30 is " + value + "<br>" + "<br>")
+
+        var value= Math.tan(30);
+        document.write("The value of tan30 is " + value )
+    </script>
+</body>
+</html>
