@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>JavaScript Data Types, Let keyword and Loops</p>
+    <p id="demo"></p>
+    <script>
+        var i;
+        var text="";
+        {
+            let i=0;
+            while (i<10){
+                text +="The value of i inside the block is "+ i + "<br>";
+                i++
+            }
+            document.write(text + "<br>")
+        }
+        document.getElementById("demo").innerHTML="The value of i outside the block is "+i
+    </script>
+</body>
+</html>

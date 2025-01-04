@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Click the button to get a time based greeting</p>
+    <button type="button" onclick="myFunction()">Try me!</button>
+    
+    
+    <script>
+        function myFunction(){
+            var greeting;
+            var time= new Date().getHours();
+
+            if (time<10){
+                greeting = "Good Morning Human"
+            }
+            else if (time<20){
+                greeting = "Good Day Human"
+            }
+            else{
+                greeting = "Good Evening"
+            }
+            
+            document.write("Current Hour is " +time + "<br>")
+            document.write(greeting)
+        }
+    </script>
+</body>
+</html>
