@@ -1,0 +1,34 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: black;
+    font-family: "Baloo Tamma 2", cursive;
+}
+.m-heading{
+    font-family: "Roboto Slab", sans-serif;
+}
+.text-white{
+    color: white;
+}
+
+.main-container{
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-image: url("https://images.unsplash.com/photo-1557683316-973673baf926?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+.main_row h1{
+    font-size: 5rem ;
+}
+
+.main_row img{
+    width: auto;
+    height: 100vh;
+}
+
