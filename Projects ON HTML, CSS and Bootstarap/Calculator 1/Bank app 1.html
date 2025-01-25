@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input[type="number"] {
+      width: 200px;
+      padding: 10px;
+      margin: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ddd;
+    }
+    .balance {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bank App</h1>
+  <p>Enter Transaction Amount:</p>
+  <input type="number" id="amount" placeholder="Enter amount" />
+  <br />
+  <button onclick="credit()">Credit</button>
+  <button onclick="debit()">Debit</button>
+  <div class="balance" id="balance">Your Account Balance is: Rs. 0</div>
+
+  <script>
+    // JavaScript Logic
+    let balance = 0;
+
+    function credit() {
+      const amountInput = document.getElementById('amount');
+      const amount = parseFloat(amountInput.value);
+      if (amount > 0) {
+        balance += amount;
+        updateBalance();
+        amountInput.value = ''; // Clear input
+      } else {
+        alert('Enter a valid amount!');
+      }
+    }
+
+    function debit() {
+      const amountInput = document.getElementById('amount');
+      const amount = parseFloat(amountInput.value);
+      if (amount > 0) {
+        if (balance >= amount) {
+          balance -= amount;
+          updateBalance();
+          amountInput.value = ''; // Clear input
+        } else {
+          alert('Insufficient balance!');
+        }
+      } else {
+        alert('Enter a valid amount!');
+      }
+    }
+
+    function updateBalance() {
+      const balanceDisplay = document.getElementById('balance');
+      balanceDisplay.textContent = "Your Account Balance is: Rs. $" +balance;
+    }
+  </script>
+</body>
+</html>
