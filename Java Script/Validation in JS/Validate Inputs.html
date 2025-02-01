@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: burlywood;
+        
+        }
+    </style>
+
+    <script>
+        function validateForm(){
+            var x= document.forms["myForm"]["fname"].value;
+            var y= document.forms["myForm"]["age"].value;
+            if (x== "" || y== "") {
+                alert("Name/ age cannot be empty");
+                return false
+            }
+            else{
+                alert("Succesfully logged in");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="myForm" onsubmit="validateForm()">
+        Name:<input type="text" name="fname"><br>
+        Age:<input type="number" id="age" min="18"><br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
