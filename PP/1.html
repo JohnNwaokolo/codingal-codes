@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your professional portfolio showcasing your web development projects">
+  <meta name="author" content="Your Name">
+  <title>Your Portfolio - Web Developer</title>
+  
+  <!-- External CSS Link (Google Fonts) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1e2a47;
+      color: white;
+      text-align: center;
+      padding: 60px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+
+    .project-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background-color: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .project-title {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      font-weight: 500;
+    }
+
+    .project-description {
+      font-size: 1rem;
+      color: #666;
+      margin-top: 15px;
+    }
+
+    .project-button {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #1e2a47;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .project-button:hover {
+      background-color: #4c5c9b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1e2a47;
+      color: white;
+      margin-top: 50px;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      .project-card {
+        padding: 15px;
+      }
+
+      .project-title {
+        font-size: 1.25rem;
+      }
+
+      .project-button {
+        padding: 10px 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Your Portfolio</h1>
+    <p>Showcasing My Web Development Projects</p>
+  </header>
+
+  <div class="container">
+    <section class="project-gallery">
+      <!-- Example Projects -->
+      <div class="project-card">
+        <img src="project1.jpg" alt="Project One Image">
+        <h3 class="project-title">Project One</h3>
+        <p class="project-description">A full-stack application using Node.js, React, and MongoDB. Solves problem X by doing Y.</p>
+        <a href="https://github.com/yourusername/project1" class="project-button">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="project2.jpg" alt="Project Two Image">
+        <h3 class="project-title">Project Two</h3>
+        <p class="project-description">A personal website built with HTML, CSS, and JavaScript. Features include A, B, and C.</p>
+        <a href="https://yourportfolio.com/project2" class="project-button">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="project3.jpg" alt="Project Three Image">
+        <h3 class="project-title">Project Three</h3>
+        <p class="project-description">A mobile app created with React Native. It helps users to track their health metrics.</p>
+        <a href="https://yourportfolio.com/project3" class="project-button">View Project</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved. <br>Contact: your.email@example.com</p>
+  </footer>
+
+</body>
+</html>
