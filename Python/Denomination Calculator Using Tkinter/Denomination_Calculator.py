@@ -7,7 +7,13 @@ root.title("Denomination Counter")
 root.configure(bg="light blue")
 root.geometry("650x400")
 
-upload = Image.open("app_img.jpg")
+import os
+from PIL import Image
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+IMAGE_PATH = os.path.join(BASE_DIR, "app_img.jpg")
+
+upload = Image.open(IMAGE_PATH)
 
 upload= upload.resize((300, 300))
 image= ImageTk.PhotoImage(upload)
@@ -36,7 +42,7 @@ def topwin():
     top =Toplevel()
     top.title("Denomination Calculator")
     top.configure(bg="light grey")
-    top.geometry("600x350+ 50+50")
+    top.geometry("600x350+50+50")
 
     label = Label(top, text="Enter total Amount", bg="light grey")
     entry = Entry(top)
@@ -88,4 +94,4 @@ def topwin():
     top.mainloop()
 
 root.mainloop()
-                  
+        
