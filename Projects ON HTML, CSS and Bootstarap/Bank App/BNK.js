@@ -64,7 +64,7 @@ function withdraw() {
 }
 
 function updateBalance() {
-    document.getElementById("balance").innerText = balance;
+    document.getElementById("balance").innerText = balance.toFixed(2);
 }
 
 document.getElementById("depositBtn").addEventListener("click", deposit);
