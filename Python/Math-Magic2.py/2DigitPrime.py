@@ -7,5 +7,5 @@ for num in range(10, 100):
             is_prime = False
             break
     
-    if is_prime == True :
+    if is_prime:
        print(num)
