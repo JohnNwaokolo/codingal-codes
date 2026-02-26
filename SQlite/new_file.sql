@@ -1,0 +1,63 @@
+
+CREATE TABLE IF NOT EXISTS NOBEL_WIN (
+
+YEAR INT,
+
+SUBJECT varchar(50),
+
+WINNER varchar(50),
+
+COUNTRY varchar(50),
+
+CATEGORY varchar(50))
+
+INSERT INTO NOBEL_WIN (YEAR, SUBJECT, WINNER, COUNTRY, CATEGORY) VALUES
+
+(1970, 'PHYSICS', 'HANNES ALFVEN', 'SWEDEN', 'SCIENTIST'),
+
+(1970, 'PHYSICS', 'LOUIS NEEL', 'FRANCE', 'SCIENTIST'),
+
+(1971, 'PHYSICS', 'PAUL', 'FRANCE', 'SCIENTIST'),
+
+(1971, 'CHEMISTRY', 'HAMILTON', 'SWEDEN', 'LINGUIST'),
+
+(1972, 'LITERATURE', 'BERNARD KELSON', 'GERMANY', 'ECONOMIST'),
+
+(1972, 'ECONOMICS', 'JOSEPH', 'RUSSIA', 'ECONOMIST'),
+
+(1973, 'BIOLOGY', 'PHILIPS', 'USA', 'PRIME MINISTER'),
+
+(1980, 'BIOLOGY', 'MARTIN', 'USA', 'PRESIDENT'),
+
+(1981, 'PHYSIOLOGY', 'HANNAH', 'HUNGARY', 'SCIENTIST'),
+
+(1975, 'PHYSICS', 'PETER', 'CHILE', 'SCIENTIST');
+
+SELECT * FROM NOBEL_WIN;
+
+
+CREATE TABLE supplier (
+
+SNO varchar(100),
+
+SNAME varchar(100),
+
+STATUS int,
+
+CITY varchar(100)
+
+);
+
+INSERT INTO supplier (SNO, SNAME, STATUS, CITY) VALUES
+
+('S1', 'Smith', 20, 'London'),
+
+('S2', 'Jones', 10, 'Paris'),
+
+('S3', 'Blake', 30, 'Paris'),
+
+('S4', 'Clarke', 20, 'London'),
+
+('S5', 'Adams', 30, 'Athens');
+
+SELECT * FROM supplier;
