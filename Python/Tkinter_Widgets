@@ -1,0 +1,19 @@
+from tkinter import *
+from PIL import Image, ImageTk
+
+#creating main window
+root = Tk()
+
+root.title("Image in Tkinter")
+
+root.geometry("400x400")
+
+upload = Image.open("image.png")
+
+img = ImageTk.PhotoImage(upload)
+label = Label(root, image=img, height=350, width= 300)
+label.place(x=50, y=0)
+label2 = Label(root, text="This is a graphic image in Tkinter", font=("Arial", 14))
+label2.place(x=40, y=360)
+
+root.mainloop()
